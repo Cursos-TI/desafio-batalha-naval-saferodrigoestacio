@@ -62,6 +62,20 @@ int main() {
         }          
     }
 
+    // Navio 3 (diagonal)
+    for (int i = 1; i < 4; i++) {
+        for (int j = 0; j < 10; j++) {
+            tabuleiro[i][i + 5] = 3;
+        }          
+    }
+    
+    // Navio 4 (diagonal)
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 10; j++) {
+            tabuleiro[i][2 - i] = 3;
+        }          
+    }
+
     printf("Tabuleiro Inicial:\n");
     // Exibe as colunas A, B, C, D, E, F, G, H, I, J
     printf("   ");
